@@ -1,0 +1,19 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# Builds
+dist/
+build/
+coverage/
+.eslintcache
+
+# Ambiente
+.env
+.env.*.local
+
+# Outros
+.DS_Store
+.angular/cache
