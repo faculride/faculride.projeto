@@ -6,8 +6,8 @@ import { Observable, tap } from 'rxjs';
   providedIn: 'root',
 })
 export class UsuariosService {
-  private apiAuth = 'https://projeto-faculride.onrender.com/api/auth';
-  private apiUsuario = 'https://projeto-faculride.onrender.com/api/usuario';
+  private apiAuth = 'https://faculride-backend.vercel.app/api/auth';
+  private apiUsuario = 'https://faculride-backend.vercel.app/api/usuario';
 
   constructor(private http: HttpClient) {}
 

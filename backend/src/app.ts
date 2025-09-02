@@ -37,8 +37,13 @@ app.use("/api/avaliacao", avaliacaoRoutes);
 app.use("/api/viagem", viagemRoutes);
 app.use("/api/logacesso", logAcessoRoutes);
 
-// Inicializa o servidor
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
-});
+// Exporta a aplicação para ser utilizada pelo Vercel
+export default app;
+
+// Inicia o servidor apenas quando executado diretamente
+if (require.main === module) {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
+  });
+}
