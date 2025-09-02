@@ -26,7 +26,7 @@ export class CadastroComponent {
 
   baseURL = window.location.hostname.includes('localhost')
     ? 'http://localhost:3000/api/usuario'
-    : 'https://projeto-faculride.onrender.com/api/usuario';
+    : 'https://faculride-backend.vercel.app/api/usuario';
     
   constructor(
     private fb: FormBuilder,
