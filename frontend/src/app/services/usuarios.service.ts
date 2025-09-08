@@ -1,13 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, tap } from 'rxjs';
+import { isBrowser } from '../utils/is-browser';
 
 @Injectable({
   providedIn: 'root',
 })
 export class UsuariosService {
-  private apiAuth = 'https://faculride-backend.vercel.app/api/auth';
-  private apiUsuario = 'https://faculride-backend.vercel.app/api/usuario';
+  private baseURL = isBrowser() && window.location.hostname.includes('localhost')
+    ? 'http://localhost:3000/api'
+    : '/api';
+  private apiAuth = `${this.baseURL}/auth`;
+  private apiUsuario = `${this.baseURL}/usuario`;
 
   constructor(private http: HttpClient) {}
 
