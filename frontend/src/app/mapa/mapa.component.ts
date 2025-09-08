@@ -44,7 +44,7 @@ export class MapaComponent implements AfterViewInit, OnInit {
   // Configuração da API
   baseURL = isBrowser() && window.location.hostname.includes('localhost')
     ? 'http://localhost:3000/api'
-    : 'https://faculride-backend.vercel.app/api';
+    : '/api';
 
   usuarioLogado = isBrowser() ? JSON.parse(localStorage.getItem('usuarioLogado') || '{}') : {};
   meuId = this.usuarioLogado.idUsuario || this.usuarioLogado.id;
