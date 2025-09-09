@@ -1,10 +1,7 @@
 {
-  "env": {
-    "SUPABASE_URL": "https://oheqdxqfafxqqxmzevyb.supabase.co",
-    "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9oZXFkeHFmYWZ4cXF4bXpldnliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTczNzU3MTIsImV4cCI6MjA3Mjk1MTcxMn0.B3sNyUYcDhIh6U4Bc71ZeIzuVu-swZJqgPayfrHmsYM"
-  },
+  "version": 2,
   "builds": [
-    { "src": "backend/api/**/*.ts", "use": "@vercel/node" },
+    { "src": "backend/api/**/*.ts", "use": "@vercel/node@3" },
     {
       "src": "frontend/package.json",
       "use": "@vercel/static-build",
