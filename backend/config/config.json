@@ -3,7 +3,7 @@
     "username": "postgres",
     "password": "FaculRide1!",
     "database": "postgres",
-    "host": "db.qnftaibaldiiszccfjlu.supabase.co",
+    "host": "db.oheqdxqfafxqqxmzevyb.supabase.co",
     "port": 5432,
     "dialect": "postgres",
     "dialectOptions": {
